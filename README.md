@@ -21,7 +21,9 @@ Without this patch, it was not possible to enumerate the files in google drive (
 `ls /mnt/g/`
 prints
 `ls: reading directory: Function not implemented`
-As shown in this issue: https://github.com/microsoft/WSL/issues/2999
+as shown in this issue: https://github.com/microsoft/WSL/issues/2999
+
+With the patch many commands work correctly, including ls and tar.
 
 ## Known issues with this solution:
-* git mishaves
+* git misbehaves
