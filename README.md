@@ -26,4 +26,4 @@ as shown in this issue: https://github.com/microsoft/WSL/issues/2999
 With the patch many commands work correctly, including ls and tar.
 
 ## Known issues with this solution:
-* git misbehaves
+* git misbehaves under WSL
