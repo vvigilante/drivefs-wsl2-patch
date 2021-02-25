@@ -16,3 +16,12 @@ The library on which the Google Drive Filesystem is based (dokany) had a "bug" w
 
 Unfortunately Google did not port this fix into their software and we do not have their latest source code. Good news is: after a little bit of digging with Ghidra I was able to make a patch that works for me, just one byte needs to be changed
 
+## Whay problem does it solve?
+Without this patch, it was not possible to enumerate the files in google drive (while it was possible to read or write a specific file). E.g. the command
+`ls /mnt/g/`
+prints
+`ls: reading directory: Function not implemented`
+As shown in this issue: https://github.com/microsoft/WSL/issues/2999
+
+## Known issues with this solution:
+* git mishaves
